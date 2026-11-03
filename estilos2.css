@@ -1,0 +1,176 @@
+/* ==========================================================================
+   ESTILOS GENERALES (estilos2.css) - Mi Rincón: Playa Honda (Lanzarote)
+   Asignatura: Aplicaciones Web (APW) - CIFP Zonzamas
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Tipo de letra, fondo y colores base para toda la página
+   -------------------------------------------------------------------------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+    background-color: #f0f4f8; /* Color de fondo suave (tono costero/arena) */
+    color: #2d3748;            /* Color del texto principal para alta legibilidad */
+    line-height: 1.6;
+    margin: 0;
+    padding: 24px;
+    max-width: 900px;          /* Limita el ancho para lectura cómoda */
+    margin-left: auto;         /* Centra el contenido horizontalmente */
+    margin-right: auto;
+}
+
+/* --------------------------------------------------------------------------
+   2. Estilo propio para los títulos (h1, h2, h3)
+   -------------------------------------------------------------------------- */
+h1 {
+    color: #0c4a6e;            /* Azul marino profundo */
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #0284c7; /* Línea divisoria moderna */
+}
+
+h2 {
+    color: #0369a1;            /* Tono azul intermedio */
+    font-size: 1.35rem;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+
+/* --------------------------------------------------------------------------
+   3. Estilos para enlaces
+   -------------------------------------------------------------------------- */
+a {
+    color: #0284c7;            /* Azul llamativo diferenciado del texto */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+a:hover {
+    color: #075985;            /* Azul más oscuro al pasar el ratón */
+    text-decoration: underline;
+}
+
+/* --------------------------------------------------------------------------
+   4. Listas y párrafos
+   -------------------------------------------------------------------------- */
+p {
+    margin-bottom: 16px;
+}
+
+ul {
+    padding-left: 24px;
+    margin-bottom: 24px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* --------------------------------------------------------------------------
+   5. Imágenes responsivas con detalle de diseño
+   -------------------------------------------------------------------------- */
+figure {
+    margin: 24px 0;
+}
+
+img {
+    max-width: 100%;           /* Evita que la imagen se desborde en móviles */
+    height: auto;              /* Mantiene la proporción correcta */
+    display: block;
+    border-radius: 12px;       /* Esquinas redondeadas */
+    border: 3px solid #ffffff; /* Marco blanco */
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15); /* Sombra suave */
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #64748b;
+    font-style: italic;
+    margin-top: 8px;
+    padding-left: 4px;
+}
+
+/* --------------------------------------------------------------------------
+   6. Tabla con bordes y cabecera diferenciada
+   -------------------------------------------------------------------------- */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Bordes colapsados */
+    margin: 24px 0;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;          /* Respeta las esquinas redondeadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+caption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #0c4a6e;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #e2e8f0; /* Bordes suaves entre celdas */
+    padding: 12px 16px;        /* Espaciado interno cómodo (padding) */
+    text-align: left;
+}
+
+/* Fila de cabecera diferenciada */
+thead th {
+    background-color: #0c4a6e; /* Fondo oscuro destacado */
+    color: #ffffff;            /* Texto blanco en contraste */
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Filas alternas (efecto cebra) */
+tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+tbody tr:hover {
+    background-color: #e0f2fe; /* Efecto interactivo al pasar el cursor */
+}
+
+/* --------------------------------------------------------------------------
+   7. Clases propias para usar con class="..." en el HTML
+   -------------------------------------------------------------------------- */
+
+/* Caja destacada para resaltar información importante */
+.destacado {
+    background-color: #e0f2fe;
+    border-left: 4px solid #0284c7;
+    padding: 14px 18px;
+    margin: 20px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Estilo de botón para enlaces importantes o llamadas a la acción */
+.boton-enlace {
+    display: inline-block;
+    background-color: #0284c7;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 8px 4px 8px 0;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.boton-enlace:hover {
+    background-color: #0369a1;
+    color: #ffffff;
+    text-decoration: none;
+    transform: translateY(-1px);
+}
